@@ -15,37 +15,39 @@ class Main
     for (int i = 1; i <= 100; i++){
     // Example calling the roll() method
     int currentRoll = roll();
-    System.out.println("Roll: "+ i + ": [" + currentRoll + "]");
+    System.out.println("Roll " + i + ": [" + currentRoll + "]");
     if (currentRoll == 1){
       one++;
     }
-    if (currentRoll == 2){
+    else if (currentRoll == 2){
       two++;
     }
-    if (currentRoll == 3){
+    else if (currentRoll == 3){
       three++;
     }
-    if (currentRoll == 4){
+    else if (currentRoll == 4){
       four++;
     }
-    if (currentRoll == 5){
+    else if (currentRoll == 5){
       five++;
     }
-    if (currentRoll == 6){
+    else if (currentRoll == 6){
       six++;
     }
-    }
+  }
 
-    System.out.println("");
-    System.out.println("Final Role Counts: ");
+
+   
+    System.out.println("\nFinal Roll Counts:");
     System.out.println("[1]: " + one + " times");
     System.out.println("[2]: " + two + " times");
     System.out.println("[3]: " + three + " times");
     System.out.println("[4]: " + four + " times");
     System.out.println("[5]: " + five + " times");
     System.out.println("[6]: " + six + " times");
-
   }
+
+  
 
   
   // Random is a class we can use to generate random numbers
